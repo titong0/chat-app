@@ -1,4 +1,3 @@
-const crypto = require("crypto");
 const config = require("../config");
 const express = require("express");
 const app = express();
@@ -14,8 +13,6 @@ server.listen(config.SV_PORT, () =>
 );
 
 io.on("connection", (socket) => {
-  io.allSockets().then((i) => console.log(i));
-
   socket.on("message", (body) => {
     const messageData = {
       content: body.content,

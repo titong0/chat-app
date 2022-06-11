@@ -1,9 +1,9 @@
 import React from "react";
 
-const Message = ({ content, username, author, joined, createdAt }) => {
+const Message = ({ content, username, author, createdAt, joined }) => {
   const isOwn = author === username;
-
   const pt = !joined ? "pt-3" : "pt-0";
+
   return (
     <>
       <div className={`grid grid-cols-12 h-fit text-slate-900 p-1 ${pt}`}>
@@ -24,7 +24,7 @@ const Message = ({ content, username, author, joined, createdAt }) => {
           >
             {!joined && (
               <h3
-                className={`col-span-full pl-2 pt-1 font-semibold text-rose-700 text-left`}
+                className={`col-span-full pl-2 pt-1 font-semibold  text-left`}
               >
                 {author}
               </h3>
