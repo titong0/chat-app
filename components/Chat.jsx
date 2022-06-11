@@ -23,7 +23,7 @@ const Chat = ({ username }) => {
   return (
     <div className="flex flex-col h-full bg-slate-500 text-gray-200 dark:bg-zinc-700 transition-colors">
       <header className="flex items-center h-16 w-full p-2">
-        <h2 className="text-xl">Tabaqueras!</h2>
+        <h2 className="text-xl">Coolest group ever</h2>
       </header>
       <ChatMessages messages={messages} username={username} />
       {socket !== null && <Input username={username} />}

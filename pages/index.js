@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import App from "../components/App";
 import Head from "next/head";
-import { BsMoonFill, BsSunFill } from "react-icons/bs";
+import ThemeChanger from "../components/ThemeChanger";
 
 const Index = () => {
   const [darkMode, setDarkMode] = useState(false);
@@ -12,13 +12,7 @@ const Index = () => {
         <title>Chat app</title>
       </Head>
       <div className={`fixed w-full h-full ${theme}`}>
-        <button
-          className="fixed top-3 right-3"
-          onClick={() => setDarkMode(!darkMode)}
-        >
-          {darkMode ? <BsMoonFill size="35" /> : <BsSunFill size="35" />}
-        </button>
-
+        <ThemeChanger darkMode={darkMode} setDarkMode={setDarkMode} />
         <App />
       </div>
     </>

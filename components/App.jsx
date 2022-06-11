@@ -2,7 +2,6 @@ import Chat from "./Chat";
 import React, { useState, useContext } from "react";
 import Login from "./Login";
 import { Io } from "../pages/_app";
-import { Socket } from "socket.io-client";
 
 const App = () => {
   const [username, setUsername] = useState(null);
@@ -14,9 +13,11 @@ const App = () => {
   ) : (
     <>
       {!socket.connected ? (
-        <div>Connecting</div>
+        <div className="flex itmes-center justify-center text-white text-4xl">
+          Connecting
+        </div>
       ) : (
-        <div className="h-full ">
+        <div className="h-full">
           <Chat username={username} />
         </div>
       )}

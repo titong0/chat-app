@@ -9,7 +9,7 @@ const Message = ({ content, username, author, joined, createdAt }) => {
       <div className={`grid grid-cols-12 h-fit text-slate-900 p-1 ${pt}`}>
         {isOwn ? (
           <div
-            className={`grid grid-cols-2 "justify-self-end col-start-3 sm:col-start-8 
+            className={`grid grid-cols-2 justify-self-end col-start-3 sm:col-start-8 
             col-span-full bg-teal-200 dark:bg-teal-500 gap-1 sm:gap-3 rounded-sm  min-w-32 pl-1 `}
           >
             <p className="p-1 inline-block">{content}</p>
