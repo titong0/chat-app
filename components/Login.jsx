@@ -14,7 +14,7 @@ const Login = ({ username, setUsername }) => {
           onSubmit={handleSubmit}
           className="flex flex-col gap-3 p-4 rounded-sm w-96 text-white "
         >
-          <h1 className="text-4xl  my-4 ">Log in</h1>
+          <h1 className="text-4xl my-4">Log in</h1>
           <label htmlFor="username">Username</label>
           <input
             name="username"
