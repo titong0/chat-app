@@ -8,7 +8,7 @@ const Login = ({ username, setUsername }) => {
   };
 
   return (
-    <div className="h-screen   ">
+    <div className="h-screen bg-slate-500 dark:bg-slate-800 transition-colors">
       <div className="flex h-full items-center justify-center">
         <form
           onSubmit={handleSubmit}

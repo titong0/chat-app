@@ -6,9 +6,7 @@ import { Socket } from "socket.io-client";
 
 const App = () => {
   const [username, setUsername] = useState(null);
-  /**
-   * @type {Socket}
-   */
+
   const socket = useContext(Io);
 
   return username === null ? (

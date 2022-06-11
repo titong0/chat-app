@@ -36,7 +36,7 @@ const Input = ({ username }) => {
         />
 
         <button type="submit">
-          <AiOutlineSend className="h-8 w-12 rounded-lg p-1 border bg-cyan-800 cursor-pointer" />
+          <AiOutlineSend className="h-8 w-12 rounded-lg p-1 border bg-cyan-500 dark:bg-cyan-200 dark:text-black cursor-pointer" />
         </button>
       </form>
     </>
